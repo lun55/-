@@ -6,15 +6,15 @@ from easydict import EasyDict as edict
 if __name__ == "__main__":
 
     '''
-        城市：福州 厦门 漳州 泉州
-        数据集: Timing  WifiConnect  WifiStable
+        城市：
+        数据集:
     '''
 
-    dataset = 'WifiConnect'
-    area = '福州'
+    dataset = ''
+    area = ''
 
     geo_config = edict({
-        'Area_path': f"E:\GISData\福厦漳泉\{area}.shp",  # 城市矢量文件路径
+        'Area_path': f"E:\GISData\XXXX\{area}.shp",  # 城市矢量文件路径
         'input_folder': f"G:\{area}\{dataset}", # 输入数据路径
         'dataset': dataset,
         'output_folder': f"G:\处理\{area}\区域筛选\{dataset}"
